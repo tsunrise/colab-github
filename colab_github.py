@@ -1,15 +1,15 @@
-def github_auth(persistant_key: bool):
+def github_auth(persistent_key: bool):
   """
   Authenticate with GitHub to access private repo. This function will 
   detect if there is `id_ed25519` key SSH profile. If not, it will create
   one. 
-  - `persistant_key`: Store private key in Google Drive.
+  - `persistent_key`: Store private key in Google Drive.
   """
   import os
 
   os.system("mkdir -p ~/.ssh")
 
-  if persistant_key:
+  if persistent_key:
     from google.colab import drive
     drive.mount('/content/drive/')
     private_key_dir = "/content/drive/MyDrive/.colab-github"
@@ -26,7 +26,7 @@ def github_auth(persistant_key: bool):
   else:
     fresh_key = False
 
-  if persistant_key:
+  if persistent_key:
     os.system("rm -f ~/.ssh/id_ed25519")
     os.system("rm -f ~/.ssh/id_ed25519.pub")
     os.system(f"cp -s {private_key_path} ~/.ssh/id_ed25519")

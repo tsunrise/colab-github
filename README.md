@@ -6,9 +6,9 @@ Authenticate with GitHub in Google Colab to access private repo.
 ```python
 !wget -q https://raw.githubusercontent.com/tsunrise/colab-github/main/colab_github.py
 import colab_github
-colab_github.github_auth(persistant_key=True)
+colab_github.github_auth(persistent_key=True)
 ```
-Note that by setting `persistant_key` to true, you will be asked to connect to Google Drive, so this script will store private key inside your `.colab-github` folder of your Google Drive. Doing so, you only need to upload your private key to Github once.
+Note that by setting `persistent_key` to true, you will be asked to connect to Google Drive, so this script will store private key inside your `.colab-github` folder of your Google Drive. Doing so, you only need to upload your private key to Github once.
 
 - You will see outputs like:
 ```
