@@ -4,7 +4,7 @@ Authenticate with GitHub in Google Colab to access private repo.
 ## Steps
 - Run the following code inside the colab notebook.
 ```python
-!wget https://raw.githubusercontent.com/tsunrise/colab-github/main/colab_github.py
+!wget -q https://raw.githubusercontent.com/tsunrise/colab-github/main/colab_github.py
 import colab_github
 colab_github.github_auth(persistant_key=True)
 ```
