@@ -1,4 +1,8 @@
-# colab-github
+# Access GitHub Private Repo in Google Colab
+<a target="_blank" href="https://colab.research.google.com/github/tsunrise/colab-github/blob/main/Access_GitHub_Private_Repo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 Authenticate with GitHub in Google Colab to access private repo.
 
 ## Steps
