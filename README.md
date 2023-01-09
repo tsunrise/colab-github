@@ -16,8 +16,7 @@ Note that by setting `persistent_key` to true, you will be asked to connect to G
 
 - You will see outputs like:
 ```
-Looks that a private key is already created. If you have already push it to github, no action required.
- Otherwise, Please go to https://github.com/settings/ssh/new to upload the following key: 
+Please go to https://github.com/settings/ssh/new to upload the following key:  
 ssh-ed25519 xxxxxxx/xxxxxxxxxxxxxxxxxxxx root@xxxxxxxxxxxxxxxx
 ```
 Upload this public key to either your [SSH settings](https://github.com/settings/ssh/new), or your repo's Deploy Keys.
